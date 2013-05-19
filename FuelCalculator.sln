@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelCalculator", "FuelCalculator\FuelCalculator.csproj", "{A823433C-F4A2-4DFD-B610-3DDE2F59047B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phone.Controls", "Phone.Controls\Phone.Controls.csproj", "{6CCB5E30-E5CE-49DB-B953-9D7A6886F2C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickChartsWP", "QuickChartsWP\QuickChartsWP.csproj", "{31FDBFD7-6F93-4D3C-8C1A-58D87E915EC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickChartsWPF", "QuickChartsWPF\QuickChartsWPF.csproj", "{6A7C16D6-B63C-4006-9F20-E9D6D4EBA09C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A823433C-F4A2-4DFD-B610-3DDE2F59047B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A823433C-F4A2-4DFD-B610-3DDE2F59047B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A823433C-F4A2-4DFD-B610-3DDE2F59047B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A823433C-F4A2-4DFD-B610-3DDE2F59047B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A823433C-F4A2-4DFD-B610-3DDE2F59047B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A823433C-F4A2-4DFD-B610-3DDE2F59047B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6CCB5E30-E5CE-49DB-B953-9D7A6886F2C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CCB5E30-E5CE-49DB-B953-9D7A6886F2C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CCB5E30-E5CE-49DB-B953-9D7A6886F2C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CCB5E30-E5CE-49DB-B953-9D7A6886F2C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31FDBFD7-6F93-4D3C-8C1A-58D87E915EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31FDBFD7-6F93-4D3C-8C1A-58D87E915EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31FDBFD7-6F93-4D3C-8C1A-58D87E915EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31FDBFD7-6F93-4D3C-8C1A-58D87E915EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A7C16D6-B63C-4006-9F20-E9D6D4EBA09C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A7C16D6-B63C-4006-9F20-E9D6D4EBA09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A7C16D6-B63C-4006-9F20-E9D6D4EBA09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A7C16D6-B63C-4006-9F20-E9D6D4EBA09C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

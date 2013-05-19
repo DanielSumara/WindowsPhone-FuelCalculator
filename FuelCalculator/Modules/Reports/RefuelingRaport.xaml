@@ -1,0 +1,66 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="FuelCalculator.Modules.Reports.RefuelingRaport"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:amq="clr-namespace:AmCharts.Windows.QuickCharts;assembly=AmCharts.Windows.QuickCharts.WP"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <controls:Pivot Title="Fuel Calculator v1.0">
+            
+            <!--Pivot item two-->
+            <controls:PivotItem Header="Statystyki (1)">
+                <Grid>
+                    <amq:SerialChart x:Name="scStats1" CategoryValueMemberPath="Mounth"
+                         AxisForeground="White"
+                         PlotAreaBackground="Black"
+                             MinimumCategoryGridStep="200"
+                         GridStroke="DarkGray">
+                        <amq:SerialChart.Graphs>
+                            <amq:ColumnGraph ValueMemberPath="Distance" Title="Przebyta odległość" Brush="#80FF3A00" ColumnWidthAllocation="0.4" />
+                            <amq:ColumnGraph ValueMemberPath="Price" Title="Koszt paliwa" Brush="#804600FF" ColumnWidthAllocation="0.4" />
+                        </amq:SerialChart.Graphs>
+                    </amq:SerialChart>
+                </Grid>
+            </controls:PivotItem>
+
+            <!--Pivot item two-->
+            <controls:PivotItem Header="Statystyki (2)">
+                <Grid>
+                    <amq:SerialChart x:Name="scStats2" CategoryValueMemberPath="Mounth"
+                         AxisForeground="White"
+                         PlotAreaBackground="Black"
+                             MinimumCategoryGridStep="200"
+                         GridStroke="DarkGray">
+                        <amq:SerialChart.Graphs>
+                            <amq:ColumnGraph ValueMemberPath="Fuel" Title="Ilość paliwa" Brush="#8000FF00" ColumnWidthAllocation="0.4" />
+                            <amq:AreaGraph ValueMemberPath="FuelPerDistance" Title="Średnie spalanie" Brush="#80D1FF00" />
+                        </amq:SerialChart.Graphs>
+                    </amq:SerialChart>
+                </Grid>
+            </controls:PivotItem>
+
+            <!--Pivot item one
+            <amq:LineGraph ValueMemberPath="val1" Title="Line #1" Brush="Blue" />
+            -->
+            <controls:PivotItem Header="Ilość tankowań">
+                <Grid>
+                    <amq:PieChart x:Name="pcTankingPerCar" TitleMemberPath="Car" ValueMemberPath="Count"/>
+                </Grid>
+            </controls:PivotItem>
+        </controls:Pivot>
+    </Grid>
+    
+</phone:PhoneApplicationPage>
